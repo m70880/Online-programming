@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>在线oj</title>
+    </head>
+<body>
+    <pre>
+<!--描述-->
+        <div><h2>{{id}}{{name}}{{star}}</h2></div>
+		<div>{{desc}}</div>
+<!--编辑框-->
+        <form action="/question/{{id}}" method="POST">
+            <textarea name="name" rows=30 cols=150>{{header}}</textarea>
+            <br>
+            <input type="submit" formenctype="appliaction/json" vaule="Submit">
+        </form>
+    </pre>
+</body>
+</html>
+
